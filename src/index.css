@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --color-primary: #4921A0;
+  --color-primary-dark: #391A7D;
+  --color-primary-light: #7A5CD7;
+  --color-surface: #FFFFFF;
+  --color-surface-muted: #F8FAFC;
+  --color-text-primary: #0F172A;
+  --color-text-muted: #475569;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-text-primary font-sans selection:bg-primary selection:text-white antialiased overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  .vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+
+  .grain-overlay {
+    @apply fixed inset-0 pointer-events-none z-[999] opacity-[0.04];
+    background-image: url('https://grainy-gradients.vercel.app/noise.svg');
+  }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slideInRight {
+  animation: slideInRight 1s ease-out forwards;
+}
