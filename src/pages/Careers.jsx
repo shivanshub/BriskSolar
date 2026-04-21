@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Briefcase, MapPin, Clock, Building, Database, Zap, Send, Phone, User, Mail, Upload } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/FooterB';
@@ -33,13 +33,6 @@ const jobDetails = {
 };
 
 const Careers = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    email: '',
-    resume: null
-  });
-
   const handleSubmit = (e) => {
     e.preventDefault();
     alert('Thank you for applying. We will review your profile and get back to you soon!');

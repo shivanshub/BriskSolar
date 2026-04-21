@@ -32,7 +32,7 @@ const SubsidyStep = ({ num, title, desc, icon: Icon }) => (
   <div className="relative group p-10 border border-black/5 hover:border-primary transition-all duration-500 bg-surface-muted rounded-sm">
     <div className="absolute top-8 right-8 text-6xl font-black italic text-black/5 group-hover:text-primary transition-colors">0{num}</div>
     <div className="w-16 h-16 rounded-full bg-primary/5 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white mb-8 transition-all duration-500">
-      <Icon className="w-8 h-8" />
+      {Icon && <Icon className="w-8 h-8" />}
     </div>
     <div className="space-y-4 relative z-10">
       <h3 className="text-3xl font-black italic tracking-tighter uppercase text-text-primary leading-tight">{title}</h3>

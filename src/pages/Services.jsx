@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { LayoutGrid, Factory, Droplets, Shovel, Info, ArrowRight, CheckCircle2 } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/FooterB';
