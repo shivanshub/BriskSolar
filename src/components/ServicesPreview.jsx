@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Maximize2, ChevronRight, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -48,9 +48,9 @@ const ServicesPreview = () => {
   }, { scope: containerRef });
 
   return (
-    <section ref={containerRef} className="py-24 px-6 lg:px-12 bg-surface">
+    <section ref={containerRef} className="py-12 lg:py-16 px-6 lg:px-12 bg-surface">
       <div className="max-w-[1800px] mx-auto">
-        <div className="flex justify-between items-end mb-24">
+        <div className="flex justify-between items-end mb-10 lg:mb-16">
           <div className="space-y-4">
             <span className="text-primary font-body font-extrabold text-xs uppercase tracking-[0.5em]">The Mechanisms</span>
             <h2 className="text-6xl lg:text-9xl font-extrabold tracking-tighter uppercase leading-none text-text-primary font-heading">The Craft.</h2>
@@ -62,7 +62,7 @@ const ServicesPreview = () => {
 
         <div className="grid lg:grid-cols-4 gap-8">
           {services.map((service, i) => (
-            <div key={i} className="service-card group relative aspect-[4/5] bg-surface-muted overflow-hidden p-8 flex flex-col justify-end cursor-pointer rounded-sm border border-black/5">
+            <div key={i} className="service-card group relative aspect-[4/5] bg-surface-muted overflow-hidden p-8 flex flex-col justify-end rounded-sm border border-black/5">
               <img
                 src={service.img}
                 className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:scale-110 group-hover:opacity-100 transition-all duration-1000"
@@ -78,10 +78,6 @@ const ServicesPreview = () => {
                   {service.desc}
                 </p>
                 <div className="h-px w-0 group-hover:w-full bg-primary transition-all duration-700" />
-                <div className="flex justify-between items-center opacity-0 group-hover:opacity-100 transition-opacity">
-                  <span className="font-body text-[10px] uppercase tracking-widest text-white/60">Explore Mechanism</span>
-                  <Maximize2 className="w-5 h-5 text-primary" />
-                </div>
               </div>
             </div>
           ))}

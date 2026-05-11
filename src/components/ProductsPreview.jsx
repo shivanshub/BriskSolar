@@ -35,9 +35,9 @@ const ProductsPreview = () => {
   ];
 
   return (
-    <section className="py-32 px-6 lg:px-12 bg-white relative">
+    <section className="py-12 lg:py-20 px-6 lg:px-12 bg-white relative">
       <div className="max-w-[1800px] mx-auto">
-        <div className="flex flex-col lg:flex-row justify-between items-end mb-24 gap-8 border-b border-black/5 pb-12">
+        <div className="flex flex-col lg:flex-row justify-between items-end mb-10 lg:mb-16 gap-8 border-b border-black/5 pb-10">
           <div className="space-y-4">
             <span className="text-primary font-body font-extrabold text-[10px] uppercase tracking-[0.6em] block">Our Expertise</span>
             <h2 className="text-6xl lg:text-8xl font-extrabold tracking-tighter uppercase text-text-primary font-heading">Solar Solutions.</h2>

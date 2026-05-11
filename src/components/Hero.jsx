@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
-const heroVideo = "/assets/bg-video/hero-bg.mp4";
+const heroVideo = "/assets/bg-video/bg.webm";
 
 import { Link } from 'react-router-dom';
 
@@ -37,28 +37,6 @@ const Hero = () => {
       .to(".hero-badge", { x: 0, opacity: 1, stagger: 0.1 }, "-=1")
       .to(".hero-cta", { y: 0, opacity: 1 }, "-=0.8");
 
-    const scrubTl = gsap.timeline({
-      scrollTrigger: {
-        trigger: containerRef.current,
-        start: "top top",
-        end: "+=100%",
-        scrub: 0.5,
-        pin: true,
-        anticipatePin: 1,
-        invalidateOnRefresh: true,
-      }
-    });
-
-    scrubTl
-      .fromTo(".hero-video-container",
-        { scale: 1, opacity: 0.5, filter: "blur(0px)" },
-        { scale: 1.4, opacity: 0, filter: "blur(20px)", ease: "none" }
-        , 0)
-      .fromTo(contentRef.current,
-        { y: 0, opacity: 1, filter: "blur(0px)" },
-        { y: -100, opacity: 0, filter: "blur(10px)", ease: "none" }
-        , 0);
-
   }, { scope: containerRef });
 
   return (
@@ -75,7 +53,7 @@ const Hero = () => {
           playsInline
           className="w-full h-full object-cover"
         >
-          <source src={heroVideo} type="video/mp4" />
+          <source src={heroVideo} type="video/webm" />
         </video>
       </div>
 

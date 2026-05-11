@@ -36,7 +36,7 @@ const SubsidyHighlight = () => {
   }, { scope: containerRef });
 
   return (
-    <section ref={containerRef} className="py-24 px-6 lg:px-12 relative overflow-hidden bg-surface">
+    <section ref={containerRef} className="py-12 lg:py-16 px-6 lg:px-12 relative overflow-hidden bg-surface">
       <div className="absolute inset-0 z-0">
         <img
           src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80&w=2000"
@@ -47,7 +47,7 @@ const SubsidyHighlight = () => {
       </div>
 
       <div className="max-w-[1800px] mx-auto">
-        <div className="grid lg:grid-cols-2 gap-20 items-center relative z-10">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center relative z-10">
           <div className="space-y-8 subsidy-content">
             <span className="text-primary font-body font-extrabold text-xs uppercase tracking-[0.5em]">Financial Incentives</span>
             <h2 className="text-5xl lg:text-7xl font-extrabold tracking-tighter leading-none uppercase text-text-primary font-heading">

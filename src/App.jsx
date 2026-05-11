@@ -32,7 +32,7 @@ const Home = () => (
       <WhyChoose />
       <ServicesPreview />
       <Testimonials />
-      <div className="mt-24 px-6 lg:px-12 max-w-[1800px] mx-auto pb-24">
+      <div className="mt-10 lg:mt-16 px-6 lg:px-12 max-w-[1800px] mx-auto pb-10 lg:pb-16">
         <CTASection />
       </div>
     </main>

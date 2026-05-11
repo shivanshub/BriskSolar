@@ -30,9 +30,9 @@ const Stats = () => {
   }, { scope: containerRef });
 
   return (
-    <section ref={containerRef} className="py-24 px-6 lg:px-12 bg-surface-muted">
+    <section ref={containerRef} className="py-10 lg:py-16 px-6 lg:px-12 bg-surface-muted">
       <div className="max-w-[1800px] mx-auto">
-        <div className="grid grid-cols-2 lg:grid-cols-4 border-t border-b border-black/5 py-16 gap-8 lg:gap-12">
+        <div className="grid grid-cols-2 lg:grid-cols-4 border-t border-b border-black/5 py-8 lg:py-12 gap-8 lg:gap-12">
           {stats.map((stat, i) => (
             <div key={i} className="stat-item space-y-4 group">
               <h4 className="text-3xl lg:text-4xl xl:text-5xl font-extrabold text-primary font-heading">

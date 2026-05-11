@@ -4,8 +4,8 @@ const logo = "/assets/logo.png";
 const Footer = () => {
   return (
     <footer className="bg-surface-muted py-32 px-6 lg:px-12 relative overflow-hidden border-t border-black/5">
-      <div className="absolute -bottom-16 left-1/2 -translate-x-1/2 w-full text-center pointer-events-none select-none opacity-[0.03]">
-        <span className="text-[15rem] lg:text-[28rem] font-extrabold tracking-tighter leading-none text-black whitespace-nowrap font-heading">BRISK.</span>
+      <div className="absolute bottom-0 lg:-bottom-12 left-1/2 -translate-x-1/2 w-full text-center pointer-events-none select-none opacity-[0.04]">
+        <span className="text-[25vw] lg:text-[28rem] font-extrabold tracking-tighter leading-none text-black whitespace-nowrap font-heading">BRISK.</span>
       </div>
 
       <div className="max-w-[1800px] mx-auto relative z-10">

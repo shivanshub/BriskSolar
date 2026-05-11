@@ -69,10 +69,10 @@ const WhyChoose = () => {
   }, { scope: containerRef });
 
   return (
-    <section ref={containerRef} className="py-24 px-6 lg:px-12 bg-surface-muted">
+    <section ref={containerRef} className="py-12 lg:py-16 px-6 lg:px-12 bg-surface-muted">
       <div className="max-w-[1800px] mx-auto">
-        <div className="grid lg:grid-cols-12 gap-20">
-          <div className="lg:col-span-4 space-y-8 sticky top-32 h-fit why-title">
+        <div className="grid lg:grid-cols-12 gap-10 lg:gap-16">
+          <div className="lg:col-span-4 space-y-8 lg:sticky lg:top-32 h-fit why-title">
             <span className="text-primary font-body font-extrabold text-xs uppercase tracking-[0.5em]">The Advantage</span>
             <h2 className="text-5xl lg:text-6xl font-extrabold tracking-tighter uppercase leading-tight text-text-primary font-heading">
               Why <br />

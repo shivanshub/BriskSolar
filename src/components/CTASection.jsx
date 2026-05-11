@@ -5,9 +5,7 @@ import CompanySlider from './CompanySlider';
 const CTASection = () => {
   return (
     <>
-      <div className="mb-24">
-        <CompanySlider />
-      </div>
+      <CompanySlider />
       <div className="p-16 lg:p-24 bg-primary relative overflow-hidden group rounded-sm shadow-[0_30px_60px_-15px_rgba(73,33,160,0.3)]">
         <div className="absolute inset-0 z-0">
           <img 

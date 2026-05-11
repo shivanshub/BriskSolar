@@ -18,14 +18,14 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-24 px-6 lg:px-12 bg-surface-muted">
+    <section className="py-12 lg:py-16 px-6 lg:px-12 bg-surface-muted">
       <div className="max-w-[1800px] mx-auto">
-        <div className="flex flex-col lg:flex-row justify-between items-end mb-24 gap-8">
+        <div className="flex flex-col items-center text-center mb-10 lg:mb-16 gap-6">
           <div className="space-y-4">
             <span className="text-primary font-body font-extrabold text-xs uppercase tracking-[0.5em]">Real Results</span>
             <h2 className="text-5xl lg:text-7xl font-extrabold tracking-tighter uppercase leading-none text-text-primary font-heading">Trust.</h2>
           </div>
-          <p className="font-body text-xs text-text-muted uppercase tracking-widest max-w-xs leading-loose">
+          <p className="font-body text-xs text-text-muted uppercase tracking-widest max-w-lg leading-loose">
             Delivering excellence to 500+ satisfied residential and industrial clients across Punjab.
           </p>
         </div>
